@@ -1,0 +1,20 @@
+[
+  { "id": "1", "name": "Saki Hanami", "image": "saki.png" },
+  { "id": "2", "name": "Temari Tsukimura", "image": "temari.png" },
+  { "id": "3", "name": "Kotone Fujita", "image": "kotone.png" },
+  { "id": "4", "name": "Mao Arimura", "image": "mao.png" },
+  { "id": "5", "name": "Lilja Katsuragi", "image": "lilja.png" },
+  { "id": "6", "name": "China Kuramoto", "image": "china.png" },
+  { "id": "7", "name": "Sumika Shiun", "image": "sumika.png" },
+  { "id": "8", "name": "Hiro Shinosawa", "image": "hiro.png" },
+  { "id": "9", "name": "Rinami Himesaki", "image": "rinami.png" },
+  { "id": "10", "name": "Ume Hanami", "image": "ume.png" },
+  { "id": "11", "name": "Misuzu Hataya", "image": "misuzu.png" },
+  { "id": "12", "name": "Sena Juo", "image": "sena.png" },
+  { "id": "13", "name": "Tsubame Amaya", "image": "tsubame.png" },
+  { "id": "14", "name": "Asari Neo", "image": "asari.png" },
+  { "id": "15", "name": "Rinha Kaya", "image": "rinha.png" },
+  { "id": "16", "name": "Shion Shirakusa", "image": "shion.png" },
+  { "id": "17", "name": "Gekka Shirakusa", "image": "gekka.png" },
+  { "id": "18", "name": "Nadeshiko Aoi", "image": "nadeshiko.png" }
+]

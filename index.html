@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9fav.ufal.my.id</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        body {
+            font-family: "PT Sans", sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .app-container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        /* Container List Fandom */
+        .fandom-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* Desain Card Horizontal */
+        .fandom-card {
+            position: relative;
+            width: 100%;
+            height: 140px; /* Tinggi card horizontal */
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
+        }
+
+        .fandom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .fandom-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Gambar memenuhi area card */
+            display: block;
+        }
+
+        /* Overlay blur dan nama fandom di sisi bawah */
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 5px 15px 10px 15px;
+            /* Gradient hitam agar teks putih terbaca */
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+            /* Efek blur pada background di belakang teks */
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            color: white;
+            text-align: left;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            margin-top: 50px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9em;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>9fav.ufal.my.id</h1>
+        
+        <div id="fandom-container" class="fandom-list">
+        </div>
+
+        <div class="footer">
+            <p><a href="https://ufal.my.id">ufal.my.id</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Mengambil data dari list.json secara relative
+        fetch('list.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('fandom-container');
+                data.forEach(fandom => {
+                    const card = document.createElement('a');
+                    card.href = fandom.link;
+                    card.className = 'fandom-card';
+                    card.innerHTML = `
+                        <img src="${fandom.image}" alt="${fandom.name}">
+                        <div class="overlay">${fandom.name}</div>
+                    `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(err => {
+                console.error("Gagal memuat list fandom:", err);
+                document.getElementById('fandom-container').innerHTML = "<p>Gagal memuat daftar fandom.</p>";
+            });
+    </script>
+</body>
+</html>
