@@ -1,5 +1,10 @@
 [
   {
+    "name": "Albums",
+    "image": "images/album-cover.webp",
+    "link": "album/index.html"
+  },
+  {
     "name": "Arknights: Endfield",
     "image": "images/endfield-cover.webp",
     "link": "endfield/index.html"

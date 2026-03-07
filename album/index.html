@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Nine - Album Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="app-container">
+        
+        <div id="capture-area" class="capture-container">
+            <div id="header-text">
+                <h1 id="dynamic-title">My Favorite Nine</h1>
+                <p id="subtitle">Album Edition</p>
+            </div>
+            
+            <div class="grid-container">
+                <div class="box" data-index="0">
+                    <div class="box-image"><span class="placeholder">+ Choose</span></div>
+                    <div class="box-info hidden"><div class="album-title"></div><div class="album-artist"></div></div>
+                </div>
+                <div class="box" data-index="1">
+                    <div class="box-image"><span class="placeholder">+ Choose</span></div>
+                    <div class="box-info hidden"><div class="album-title"></div><div class="album-artist"></div></div>
+                </div>
+                <div class="box" data-index="2">
+                    <div class="box-image"><span class="placeholder">+ Choose</span></div>
+                    <div class="box-info hidden"><div class="album-title"></div><div class="album-artist"></div></div>
+                </div>
+                <div class="box" data-index="3">
+                    <div class="box-image"><span class="placeholder">+ Choose</span></div>
+                    <div class="box-info hidden"><div class="album-title"></div><div class="album-artist"></div></div>
+                </div>
+                <div class="box" data-index="4">
+                    <div class="box-image"><span class="placeholder">+ Choose</span></div>
+                    <div class="box-info hidden"><div class="album-title"></div><div class="album-artist"></div></div>
+                </div>
+                <div class="box" data-index="5">
+                    <div class="box-image"><span class="placeholder">+ Choose</span></div>
+                    <div class="box-info hidden"><div class="album-title"></div><div class="album-artist"></div></div>
+                </div>
+                <div class="box" data-index="6">
+                    <div class="box-image"><span class="placeholder">+ Choose</span></div>
+                    <div class="box-info hidden"><div class="album-title"></div><div class="album-artist"></div></div>
+                </div>
+                <div class="box" data-index="7">
+                    <div class="box-image"><span class="placeholder">+ Choose</span></div>
+                    <div class="box-info hidden"><div class="album-title"></div><div class="album-artist"></div></div>
+                </div>
+                <div class="box" data-index="8">
+                    <div class="box-image"><span class="placeholder">+ Choose</span></div>
+                    <div class="box-info hidden"><div class="album-title"></div><div class="album-artist"></div></div>
+                </div>
+            </div>
+
+            <p id="website-url">9fav.ufal.my.id/album</p>
+        </div>
+
+        <div class="user-input-section">
+            <input type="text" id="user-name" placeholder="Your name (optional)">
+        </div>
+
+        <div class="action-buttons">
+            <button id="btn-share">Share Link</button>
+            <button id="btn-download">Download Image</button>
+            <button id="btn-home">Homepage</button>
+        </div>
+
+        <div class="footer">
+            <p><a href="https://ufal.my.id">ufal.my.id</a></p>
+        </div>
+    </div>
+
+    <div id="search-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Search for albums</h2>
+            <input type="text" id="search-input" placeholder="Type album name">
+            <div id="search-results" class="results-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
