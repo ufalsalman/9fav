@@ -15,6 +15,11 @@
     "link": "bandori/index.html"
   },
   {
+    "name": "NIJISANJI",
+    "image": "images/nijisanji-cover.webp",
+    "link": "nijisanji/index.html"
+  },
+  {
     "name": "Albums",
     "image": "images/album-cover.webp",
     "link": "album/index.html"
