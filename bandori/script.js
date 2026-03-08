@@ -32,12 +32,17 @@ userNameInput.addEventListener('input', function() {
 });
 
 // 2. Logika Klik Kotak untuk Buka Modal
+// Logika Klik Kotak untuk Buka Modal
 boxes.forEach(box => {
     box.addEventListener('click', function() {
         currentBoxIndex = this.getAttribute('data-index');
         modal.classList.remove('hidden');
         searchInput.value = ''; 
-        renderResults(operatorsData); 
+        
+        // ACAK DATA SEBELUM DITAMPILKAN
+        const shuffledData = shuffleArray([...operatorsData]); // Gunakan [...] agar data asli tidak ikut teracak permanen
+        renderResults(shuffledData); 
+        
         searchInput.focus();
     });
 });
@@ -54,12 +59,21 @@ window.addEventListener('click', (e) => {
 });
 
 // 4. Logika Pencarian
+// Logika Pencarian
 searchInput.addEventListener('input', function() {
     const keyword = this.value.toLowerCase();
-    const filtered = operatorsData.filter(op => 
-        op.name.toLowerCase().includes(keyword)
-    );
-    renderResults(filtered);
+    
+    if (keyword === '') {
+        // Jika kolom pencarian kosong, tampilkan hasil acak
+        const shuffledData = shuffleArray([...operatorsData]);
+        renderResults(shuffledData);
+    } else {
+        // Jika ada kueri, saring berdasarkan nama
+        const filtered = operatorsData.filter(op => 
+            op.name.toLowerCase().includes(keyword)
+        );
+        renderResults(filtered);
+    }
 });
 
 // 5. Fungsi Merender Daftar Pencarian
@@ -127,4 +141,13 @@ if (btnHome) {
         // '../' berarti naik satu level folder ke root
         window.location.href = '../index.html'; 
     });
+}
+
+// Fungsi untuk mengacak urutan array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
 }

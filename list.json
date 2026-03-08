@@ -1,10 +1,5 @@
 [
   {
-    "name": "Albums",
-    "image": "images/album-cover.webp",
-    "link": "album/index.html"
-  },
-  {
     "name": "Arknights: Endfield",
     "image": "images/endfield-cover.webp",
     "link": "endfield/index.html"
@@ -18,5 +13,10 @@
     "name": "BanG Dream!",
     "image": "images/bandori-cover.webp",
     "link": "bandori/index.html"
+  },
+  {
+    "name": "Albums",
+    "image": "images/album-cover.webp",
+    "link": "album/index.html"
   }
 ]
