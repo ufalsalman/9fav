@@ -20,6 +20,11 @@
     "link": "nijisanji/index.html"
   },
   {
+    "name": "Touhou Project",
+    "image": "images/touhou-cover.webp",
+    "link": "touhou/index.html"
+  },
+  {
     "name": "Albums",
     "image": "images/album-cover.webp",
     "link": "album/index.html"
