@@ -77,8 +77,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Kotak 1:1 dengan sudut melengkung */
-/* Kotak tetap 1:1 sesuai keinginan Anda */
+/* Kotak tetap 1:1 */
 .box {
     aspect-ratio: 1 / 1; 
     background-color: #f9f9f9;
@@ -90,22 +89,26 @@ body {
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box; /* Mencegah border memotong ukuran kotak */
 }
 
-/* Saat kotak terisi gambar, hilangkan garis putus-putus */
+/* Hilangkan garis putus-putus saat terisi */
 .box.filled {
     border: none; 
     background-color: transparent;
 }
 
+/* Teknik perbaikan agar tidak gepeng saat dirender */
 .box img {
-    width: 100%;
-    height: 100%;
-    /* Mengisi kotak sepenuhnya */
-    object-fit: cover; 
-    /* KUNCI: Memaksa gambar nempel ke atas, sehingga yang terpotong adalah bagian bawah */
-    object-position: top; 
+    position: absolute;
+    top: 0; /* Memaksa nempel ke atas kanvas */
+    left: 50%;
+    transform: translateX(-50%); /* Menjaga posisi horizontal tetap di tengah */
+    width: 100%; /* Mengunci lebar */
+    height: auto; /* Membiarkan tinggi mengikuti rasio asli gambar */
+    min-height: 100%; /* Memastikan tidak ada ruang kosong di dalam kotak */
     display: block;
+    /* Kita tidak lagi menggunakan object-fit karena sering gagal saat render canvas */
 }
 
 /* Pengaturan URL Website di bawah */
