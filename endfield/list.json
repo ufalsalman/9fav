@@ -22,5 +22,7 @@
   { "id": "21", "name": "Antal", "image": "antal.png" },
   { "id": "22", "name": "Catcher", "image": "catcher.png" },
   { "id": "23", "name": "Estella", "image": "estella.png" },
-  { "id": "24", "name": "Fluorite", "image": "fluorite.png" }
+  { "id": "24", "name": "Fluorite", "image": "fluorite.png" },
+  { "id": "25", "name": "Tangtang", "image": "tangtang.png" },
+  { "id": "26", "name": "Rossi", "image": "rossi.png" }
 ]
