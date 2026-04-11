@@ -24,5 +24,6 @@
   { "id": "23", "name": "Estella", "image": "estella.png" },
   { "id": "24", "name": "Fluorite", "image": "fluorite.png" },
   { "id": "25", "name": "Tangtang", "image": "tangtang.png" },
-  { "id": "26", "name": "Rossi", "image": "rossi.png" }
+  { "id": "26", "name": "Rossi", "image": "rossi.png" },
+  { "id": "27", "name": "Zhuang Fangyi", "image": "zhuangfy.png" }
 ]
