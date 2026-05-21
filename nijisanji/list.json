@@ -264,5 +264,13 @@
   { "id": "263", "name": "Sumeragi Reo", "image": "reo.png" },
   { "id": "264", "name": "Hanakago Tsubasa", "image": "tsubasa.png" },
   { "id": "265", "name": "Shirasa Ayane", "image": "ayane.png" },
-  { "id": "266", "name": "Minamo Madoka", "image": "madoka.png" }
+  { "id": "266", "name": "Minamo Madoka", "image": "madoka.png" },
+  { "id": "267", "name": "Onotora", "image": "onotora.png" },
+  { "id": "268", "name": "Kuri Eita", "image": "eita.png" },
+  { "id": "269", "name": "Kokonami Iruka", "image": "iruka.png" },
+  { "id": "270", "name": "Senri Ayumu", "image": "ayumu.png" },
+  { "id": "271", "name": "Tsukahara Daichi", "image": "daichi.png" },
+  { "id": "272", "name": "Mikogami Kotone", "image": "kotone.png" },
+  { "id": "273", "name": "Reina", "image": "reina.png" },
+  { "id": "274", "name": "Rayon", "image": "rayon.png" }
 ]
