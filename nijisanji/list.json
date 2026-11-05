@@ -272,5 +272,9 @@
   { "id": "271", "name": "Tsukahara Daichi", "image": "daichi.png" },
   { "id": "272", "name": "Mikogami Kotone", "image": "kotone.png" },
   { "id": "273", "name": "Reina", "image": "reina.png" },
-  { "id": "274", "name": "Rayon", "image": "rayon.png" }
+  { "id": "274", "name": "Rayon", "image": "rayon.png" },
+  { "id": "274", "name": "Purin Lala Mode", "image": "purin.png" },
+  { "id": "274", "name": "Pomelo Punch", "image": "pomelo.png" },
+  { "id": "274", "name": "Kaminaga Taiga", "image": "taiga.png" },
+  { "id": "274", "name": "Yamada Ryuichiro", "image": "ryuichiro.png" }
 ]
